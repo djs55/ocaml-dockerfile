@@ -1,0 +1,326 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Dockerfile" rel="Chapter" href="Dockerfile.html">
+<link title="Dockerfile_opam" rel="Chapter" href="Dockerfile_opam.html">
+<link title="Dockerfile_opam_cmdliner" rel="Chapter" href="Dockerfile_opam_cmdliner.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><br></td></tr>
+<tr><td><a href="Dockerfile.html#VAL(@@)">(@@)</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">a @@ b</code> concatenates two Dockerfile fragments into one.
+</div>
+</td></tr>
+<tr><td align="left"><br>A</td></tr>
+<tr><td><a href="Dockerfile.html#VALadd">add</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">add ~src ~dst</code> copies new files, directories or remote file URLs
+  from <code class="code">src</code> and adds them to the filesystem of the container at the
+  <code class="code">dst</code> path.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.Apt.html#VALadd_opensuse_repo">add_opensuse_repo</a> [<a href="Dockerfile_opam.Apt.html">Dockerfile_opam.Apt</a>]</td>
+<td><div class="info">
+Add a <code class="code">apt</code> repository entry for the OpenSUSE Build
+        Service repository for OCaml
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.RPM.html#VALadd_opensuse_repo">add_opensuse_repo</a> [<a href="Dockerfile_opam.RPM.html">Dockerfile_opam.RPM</a>]</td>
+<td><div class="info">
+Add a Yum entry for the OpenSUSE Build Service OCaml repo
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.Linux.Apt.html#VALadd_user">add_user</a> [<a href="Dockerfile.Linux.Apt.html">Dockerfile.Linux.Apt</a>]</td>
+<td><div class="info">
+<code class="code">add_user username</code> will install a new user with name <code class="code">username</code> and a locked
+        password.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.Linux.RPM.html#VALadd_user">add_user</a> [<a href="Dockerfile.Linux.RPM.html">Dockerfile.Linux.RPM</a>]</td>
+<td><div class="info">
+<code class="code">add_user username</code> will install a new user with name <code class="code">username</code> and a locked
+        password.
+</div>
+</td></tr>
+<tr><td align="left"><br>C</td></tr>
+<tr><td><a href="Dockerfile_opam_cmdliner.html#VALcmd">cmd</a> [<a href="Dockerfile_opam_cmdliner.html">Dockerfile_opam_cmdliner</a>]</td>
+<td><div class="info">
+This generate a Cmdliner term with various defaults filled in for
+    the manual page, and a default term that specifies an output
+    directory.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALcmd">cmd</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">cmd args</code> provides defaults for an executing container.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALcmd_exec">cmd_exec</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">cmd_exec args</code> provides defaults for an executing container.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALcomment">comment</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+Adds a comment to the Dockerfile for documentation purposes
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALcopy">copy</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">copy ~src ~dst</code> copies new files or directories from <code class="code">src</code> and
+  adds them to the filesystem of the container at the path <code class="code">dst</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>D</td></tr>
+<tr><td><a href="Dockerfile.Linux.Apt.html#VALdev_packages">dev_packages</a> [<a href="Dockerfile.Linux.Apt.html">Dockerfile.Linux.Apt</a>]</td>
+<td><div class="info">
+<code class="code">dev_packages ?extra ()</code> will install the base development tools and <code class="code">sudo</code>,
+        <code class="code">passwd</code> and <code class="code">git</code> and X11.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.Linux.RPM.html#VALdev_packages">dev_packages</a> [<a href="Dockerfile.Linux.RPM.html">Dockerfile.Linux.RPM</a>]</td>
+<td><div class="info">
+<code class="code">dev_packages ?extra ()</code> will install the base development tools and <code class="code">sudo</code>,
+        <code class="code">passwd</code> and <code class="code">git</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>E</td></tr>
+<tr><td><a href="Dockerfile.html#VALempty">empty</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+An empty set of instruction lines.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALentrypoint">entrypoint</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">entrypoint fmt</code> allows you to configure a container that will
+  run as an executable.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALentrypoint_exec">entrypoint_exec</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">entrypoint fmt</code> allows you to configure a container that will
+  run as an executable.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALenv">env</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">env</code> sets the list of environment variables supplied with the
+  (&lt;key&gt;, &lt;value&gt;) tuple.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALexpose_port">expose_port</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">expose_port</code> informs Docker that the container will listen on the specified
+  network port at runtime.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALexpose_ports">expose_ports</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">expose_ports</code> informs Docker that the container will listen on the specified
+  network ports at runtime.
+</div>
+</td></tr>
+<tr><td align="left"><br>F</td></tr>
+<tr><td><a href="Dockerfile.html#VALfrom">from</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+The <code class="code">from</code> instruction sets the base image for subsequent instructions.
+</div>
+</td></tr>
+<tr><td align="left"><br>G</td></tr>
+<tr><td><a href="Dockerfile_opam.html#VALgenerate_dockerfiles">generate_dockerfiles</a> [<a href="Dockerfile_opam.html">Dockerfile_opam</a>]</td>
+<td><div class="info">
+<code class="code">generate_dockerfiles output_dir (name * docker)</code> will
+    output a list of Dockerfiles inside the <code class="code">output_dir/name</code> subdirectory,
+    with each directory containing the Dockerfile specified by <code class="code">docker</code>.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.Linux.RPM.html#VALgroupinstall">groupinstall</a> [<a href="Dockerfile.Linux.RPM.html">Dockerfile.Linux.RPM</a>]</td>
+<td><div class="info">
+<code class="code">groupinstall fmt</code> will run <code class="code">yum groupinstall</code> on the supplied package list.
+</div>
+</td></tr>
+<tr><td align="left"><br>H</td></tr>
+<tr><td><a href="Dockerfile_opam.html#VALheader">header</a> [<a href="Dockerfile_opam.html">Dockerfile_opam</a>]</td>
+<td><div class="info">
+<code class="code">header image tag</code> initalises a fresh Dockerfile using the <code class="code">image:tag</code>
+    as its base.
+</div>
+</td></tr>
+<tr><td align="left"><br>I</td></tr>
+<tr><td><a href="Dockerfile.Linux.Git.html#VALinit">init</a> [<a href="Dockerfile.Linux.Git.html">Dockerfile.Linux.Git</a>]</td>
+<td><div class="info">
+Configure the git name and email variables to sensible defaults
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.Linux.Apt.html#VALinstall">install</a> [<a href="Dockerfile.Linux.Apt.html">Dockerfile.Linux.Apt</a>]</td>
+<td><div class="info">
+<code class="code">install fmt</code> will <code class="code">apt-get install</code> the packages specified by the <code class="code">fmt</code> format string.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.Linux.RPM.html#VALinstall">install</a> [<a href="Dockerfile.Linux.RPM.html">Dockerfile.Linux.RPM</a>]</td>
+<td><div class="info">
+<code class="code">install fmt</code> will run <code class="code">yum install</code> on the supplied package list.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.Apt.html#VALinstall_base_packages">install_base_packages</a> [<a href="Dockerfile_opam.Apt.html">Dockerfile_opam.Apt</a>]</td>
+<td><div class="info">
+Install the base packages required by OPAM, such as <code class="code">unzip</code>,
+        <code class="code">curl</code> and so on.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.RPM.html#VALinstall_base_packages">install_base_packages</a> [<a href="Dockerfile_opam.RPM.html">Dockerfile_opam.RPM</a>]</td>
+<td><div class="info">
+Install the base development packages
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.html#VALinstall_ext_plugin">install_ext_plugin</a> [<a href="Dockerfile_opam.html">Dockerfile_opam</a>]</td>
+<td><div class="info">
+Installs the external dependency plugin shell script.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.html#VALinstall_opam_from_source">install_opam_from_source</a> [<a href="Dockerfile_opam.html">Dockerfile_opam</a>]</td>
+<td><div class="info">
+Commands to install OPAM via a source code checkout from GitHub.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.Apt.html#VALinstall_system_ocaml">install_system_ocaml</a> [<a href="Dockerfile_opam.Apt.html">Dockerfile_opam.Apt</a>]</td>
+<td><div class="info">
+Install the system OCaml packages via <code class="code">apt-get</code>
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.RPM.html#VALinstall_system_ocaml">install_system_ocaml</a> [<a href="Dockerfile_opam.RPM.html">Dockerfile_opam.RPM</a>]</td>
+<td><div class="info">
+Install the system OCaml packages via Yum
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.Apt.html#VALinstall_system_opam">install_system_opam</a> [<a href="Dockerfile_opam.Apt.html">Dockerfile_opam.Apt</a>]</td>
+<td><div class="info">
+Install the system OPAM packages via <code class="code">apt-get</code>
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.RPM.html#VALinstall_system_opam">install_system_opam</a> [<a href="Dockerfile_opam.RPM.html">Dockerfile_opam.RPM</a>]</td>
+<td><div class="info">
+Install the system OPAM packages via Yum
+</div>
+</td></tr>
+<tr><td align="left"><br>M</td></tr>
+<tr><td><a href="Dockerfile.html#VALmaintainer">maintainer</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">maintainer</code> sets the author field of the generated images.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALmaybe">maybe</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">maybe f v</code> returns <a href="Dockerfile.html#VALempty"><code class="code"><span class="constructor">Dockerfile</span>.empty</code></a> if the optional value <code class="code">v</code> is <code class="code"><span class="constructor">None</span></code>, and
+    otherwise applies <code class="code">f</code> to the <code class="code"><span class="constructor">Some</span></code> value in <code class="code">v</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>O</td></tr>
+<tr><td><a href="Dockerfile.html#VALonbuild">onbuild</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">onbuild t</code> adds to the image a trigger instruction <code class="code">t</code> to be
+  executed at a later time, when the image is used as the base for
+  another build.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.html#VALopam_init">opam_init</a> [<a href="Dockerfile_opam.html">Dockerfile_opam</a>]</td>
+<td><div class="info">
+<code class="code">opam_init ?repo ?compiler_version</code> initialises the OPAM
+    repository.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.html#VALopamhome">opamhome</a> [<a href="Dockerfile_opam.html">Dockerfile_opam</a>]</td>
+<td><div class="info">
+The location of the <code class="code">opam</code> user home directory
+</div>
+</td></tr>
+<tr><td align="left"><br>R</td></tr>
+<tr><td><a href="Dockerfile_opam_cmdliner.html#VALrun">run</a> [<a href="Dockerfile_opam_cmdliner.html">Dockerfile_opam_cmdliner</a>]</td>
+<td><div class="info">
+<code class="code">run</code> executes the term that results from <a href="Dockerfile_opam_cmdliner.html#VALcmd"><code class="code"><span class="constructor">Dockerfile_opam_cmdliner</span>.cmd</code></a> and returns with
+    a non-zero exit code if there is an error.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALrun">run</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">run fmt</code> will execute any commands in a new layer on top of the current
+  image and commit the results.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile_opam.html#VALrun_as_opam">run_as_opam</a> [<a href="Dockerfile_opam.html">Dockerfile_opam</a>]</td>
+<td><div class="info">
+<code class="code">run_as_opam fmt</code> runs the command specified by the <code class="code">fmt</code>
+    format string as the <code class="code">opam</code> user.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.Linux.html#VALrun_as_user">run_as_user</a> [<a href="Dockerfile.Linux.html">Dockerfile.Linux</a>]</td>
+<td><div class="info">
+<code class="code">run_as_user user fmt</code> will execute <code class="code">sudo -u user /bin/sh -c <span class="string">"fmt"</span></code> after
+      quoting <code class="code">fmt</code>.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALrun_exec">run_exec</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">run_exec args</code> will execute any commands in a new layer on top of the current
+  image and commit the results.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.Linux.html#VALrun_sh">run_sh</a> [<a href="Dockerfile.Linux.html">Dockerfile.Linux</a>]</td>
+<td><div class="info">
+<code class="code">run_sh fmt</code> will execute <code class="code">/bin/sh -c <span class="string">"fmt"</span></code> after quoting <code class="code">fmt</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>S</td></tr>
+<tr><td><a href="Dockerfile.html#VALstring_of_t">string_of_t</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">string_of_t t</code> converts a <a href="Dockerfile.html#TYPEt"><code class="code"><span class="constructor">Dockerfile</span>.t</code></a> into a Dockerfile format entry
+</div>
+</td></tr>
+<tr><td align="left"><br>U</td></tr>
+<tr><td><a href="Dockerfile.Linux.Apt.html#VALupdate">update</a> [<a href="Dockerfile.Linux.Apt.html">Dockerfile.Linux.Apt</a>]</td>
+<td><div class="info">
+<code class="code">update</code> will run <code class="code">apt-get update <span class="keywordsign">&amp;&amp;</span> apt-get upgrade</code> non-interactively.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALuser">user</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">user fmt</code> sets the user name or UID to use when running the image
+  and for any <a href="Dockerfile.html#VALrun"><code class="code"><span class="constructor">Dockerfile</span>.run</code></a>, <a href="Dockerfile.html#VALcmd"><code class="code"><span class="constructor">Dockerfile</span>.cmd</code></a>, <a href="Dockerfile.html#VALentrypoint"><code class="code"><span class="constructor">Dockerfile</span>.entrypoint</code></a> commands that follow it in
+  the Dockerfile.
+</div>
+</td></tr>
+<tr><td align="left"><br>V</td></tr>
+<tr><td><a href="Dockerfile.html#VALvolume">volume</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">volume fmt</code> will create a mount point with the specified name
+  and mark it as holding externally mounted volumes from native host
+  or other containers.
+</div>
+</td></tr>
+<tr><td><a href="Dockerfile.html#VALvolumes">volumes</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">volumes mounts</code> will create mount points with the specified names
+  in <code class="code">mounts</code> and mark them as holding externally mounted volumes
+  from native host or other containers.
+</div>
+</td></tr>
+<tr><td align="left"><br>W</td></tr>
+<tr><td><a href="Dockerfile.html#VALworkdir">workdir</a> [<a href="Dockerfile.html">Dockerfile</a>]</td>
+<td><div class="info">
+<code class="code">workdir fmt</code> sets the working directory for any <a href="Dockerfile.html#VALrun"><code class="code"><span class="constructor">Dockerfile</span>.run</code></a>, <a href="Dockerfile.html#VALcmd"><code class="code"><span class="constructor">Dockerfile</span>.cmd</code></a>
+  and <a href="Dockerfile.html#VALentrypoint"><code class="code"><span class="constructor">Dockerfile</span>.entrypoint</code></a> instructions that follow it in the Dockerfile.
+</div>
+</td></tr>
+</table>
+</body>
+</html>
